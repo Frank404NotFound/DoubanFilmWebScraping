@@ -1,0 +1,33 @@
+<html>
+
+    <script type="text/javascript">
+    function flip(id) {
+        elem = document.getElementById(id)
+        if (elem.style.display == "block") {
+            elem.style.display = "none"
+        } else {
+            elem.style.display = "block"
+        }
+    }
+    </script>
+    <body>
+        <table width="900" align="center">
+            <tr>
+                <td width="300">
+                    <img id = "ppkk" src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2654729576.webp"  style="display:none"/>
+                </td>
+                <td>
+                    <img src="wordcloud/10437779.png" onclick="flip('ppkk');"/>
+                </td>
+            </tr>
+            <tr>
+                <td width="300">
+                    <img src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2654729576.webp" onclick="flip(this.id);"/>
+                </td>
+                <td>
+                    <img src="wordcloud/10437779.png"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
